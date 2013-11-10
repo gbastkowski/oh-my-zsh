@@ -5,7 +5,7 @@ function my_git_prompt_info() {
   echo "$ZSH_THEME_GIT_PROMPT_PREFIX${ref#refs/heads/}$ZSH_THEME_GIT_PROMPT_SUFFIX"
 }
 
-PROMPT='%{$fg_bold[red]%}➜ % %{$reset_color%}'
+PROMPT='%{$fg_bold[red]%}`whoami`@`hostname` ➜  % %{$reset_color%}'
 RPROMPT='%{$fg_bold[blue]%}$(parse_git_dirty) $(my_git_prompt_info) %{$fg_bold[blue]%}% %{$fg[cyan]%}%~%{$reset_color%}'
 
 ZSH_THEME_GIT_PROMPT_PREFIX="%{$fg[blue]%}[%{$fg[red]%}"
