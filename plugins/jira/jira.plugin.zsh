@@ -45,6 +45,14 @@ open_jira_issue () {
     jira_prefix=""
   fi
 
+  if [ -f .jira-prefix ]; then
+    jira_prefix=$(cat .jira-prefix)
+  elif [ -f ~/.jira-prefix ]; then
+    jira_prefix=$(cat ~/.jira-prefix)
+  else
+    jira_prefix=""
+  fi
+
   if [ -z "$1" ]; then
     echo "Opening new issue"
     $open_cmd "${jira_url}/secure/CreateIssue!default.jspa"
