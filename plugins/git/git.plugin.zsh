@@ -79,6 +79,7 @@ compdef _git ga=git-add
 alias gap='git add --patch'
 alias gau='git add --update'
 alias gaa='git add --all'
+alias gau='git add --update'
 alias gm='git merge'
 compdef _git gm=git-merge
 alias grh='git reset HEAD'
