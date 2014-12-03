@@ -96,7 +96,7 @@ alias gvt='git verify-tag'
 compdef _git gvt=git verify-tag
 
 #remove the gf alias
-#alias gf='git ls-files | grep'
+alias gf='git fetch'
 
 alias gpoat='git push origin --all && git push origin --tags'
 alias gmt='git mergetool --no-prompt'
