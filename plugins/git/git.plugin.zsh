@@ -78,6 +78,7 @@ alias ga='git add'
 compdef _git ga=git-add
 alias gap='git add --patch'
 alias gau='git add --update'
+alias gaa='git add --all'
 alias gm='git merge'
 compdef _git gm=git-merge
 alias grh='git reset HEAD'
@@ -102,7 +103,7 @@ alias gf='git fetch'
 
 alias gpoat='git push origin --all && git push origin --tags'
 alias gmt='git mergetool --no-prompt'
-compdef _git gm=git-mergetool
+compdef _git gmt=git-mergetool
 
 alias gg='git gui citool'
 alias gga='git gui citool --amend'
@@ -177,6 +178,3 @@ alias gignore='git update-index --assume-unchanged'
 alias gunignore='git update-index --no-assume-unchanged'
 # list temporarily ignored files
 alias gignored='git ls-files -v | grep "^[[:lower:]]"'
-
-
-
