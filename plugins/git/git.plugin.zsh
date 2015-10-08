@@ -228,6 +228,7 @@ alias grv='git remote -v'
 
 alias gsb='git status -sb'
 alias gsd='git svn dcommit'
+alias gsf='git svn fetch'
 alias gsi='git submodule init'
 alias gsps='git show --pretty=short --show-signature'
 alias gsr='git svn rebase'
